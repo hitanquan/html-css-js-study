@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>float浮动</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="box1">
+            盒子1
+        </div>
+
+        <div class="box2">
+            盒子2
+        </div>
+        <!-- 默认情况下，块级元素（div等）会独自各占一行显示在浏览器中，当给盒子1添加了左浮动样式后，
+            盒子1就会漂浮在盒子2的上面，专业术语叫做脱标，即脱离标准普通流的控制，漂浮在普通流的上方，不再占据原来的位置,
+            因此盒子2就移到了原本盒子1的位置。
+         -->
+
+        <div class="box3">
+            盒子3
+        </div>
+
+        <div class="box4">
+            盒子4
+        </div>
+
+        <div class="box5">
+            盒子5
+        </div>
+
+        <div class="box6">
+            盒子6
+        </div>
+        <!-- 如果多个盒子都设置了浮动，则它们会按照属性值一行内显示并且顶端对齐排列。 
+            浮动的盒子是互相贴靠在一起的（不会有缝隙），如果在浏览器一行中装不下这些浮动的盒子， 多出的盒子会另起一行对齐。
+        -->
+         
+    </body>
+</html>
