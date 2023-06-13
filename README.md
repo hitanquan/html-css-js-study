@@ -1,2 +1,3 @@
-# html-css-study
-html与css学习笔记和案例
+# html-css-js-study
+
+html、css、js 学习笔记和案例
