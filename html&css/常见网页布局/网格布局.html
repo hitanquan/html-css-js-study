@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            display: grid; /** 通过 display: grid; 实现网格布局 */
+            /** 让列自动适应容器的宽度，每列的最小宽度为 200px，最大宽度为 1fr */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px; /** 网格项之间的间隔为 20px */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .grid-item {
+            height: 200px;
+            background-color: #ccc;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
+    </div>
+</body>
+</html>

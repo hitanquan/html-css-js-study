@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>静态布局示例</title>
+  <style>
+    .container {
+      position: static;
+      width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .sidebar {
+      float: left;
+      width: 200px;
+      background-color: #e6e6e6;
+      padding: 10px;
+    }
+
+    .content {
+      margin-left: 220px;
+      background-color: #fff;
+      padding: 20px;
+    }
+
+    .footer {
+      clear: both;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>静态布局示例</h1>
+    </div>
+    <div class="sidebar">
+      <p>左侧边栏</p>
+    </div>
+    <div class="content">
+      <h2>主要内容区域</h2>
+      <p>这是静态布局的主要内容。</p>
+    </div>
+    <div class="footer">
+      <p>底部信息</p>
+    </div>
+  </div>
+</body>
+</html>

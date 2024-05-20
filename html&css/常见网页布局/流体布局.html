@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .fluid-box {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            background-color: #ccc;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            .fluid-box {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .fluid-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fluid-box">Box 1</div>
+        <div class="fluid-box">Box 2</div>
+        <div class="fluid-box">Box 3</div>
+        <div class="fluid-box">Box 4</div>
+        <div class="fluid-box">Box 5</div>
+        <div class="fluid-box">Box 6</div>
+    </div>
+</body>
+</html>

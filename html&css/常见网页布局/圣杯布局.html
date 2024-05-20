@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>圣杯布局</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .header,
+    .footer {
+      height: 100px;
+      line-height: 100px;
+      background-color: #999;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bolder;
+    }
+
+    .container {
+      padding: 0 220px 0 200px; /* 左右两边的宽度 */
+      overflow: hidden; /* 清除浮动，形成BFC撑开文档 */
+    }
+
+    .left,
+    .middle,
+    .right {
+      position: relative; /* 不写，会遮挡middle盒子 */
+      float: left; /* 浮动, 脱离文档流 */
+      min-height: 130px;
+      word-break: break-all;
+    }
+
+    .left {
+      margin-left: -100%; /* 将左边的元素（.left）的位置调整到与中间内容元素（.middle）重叠的位置 */
+      left: -200px; /* 将.left元素向右移动200px，使得.left元素恰好到达容器的最左侧。 */
+      width: 200px;
+      background-color: #ccc;
+    }
+
+    .right {
+      margin-left: -220px; /* 使得.right元素向左移动，与.middle元素重叠。 */
+      right: -220px; /* 把.right元素向右移动220px，使其不与.middle元素重叠 */
+      width: 220px;
+      background-color: #ccc;
+    }
+
+    .middle {
+      width: 100%;
+      background-color: #eee;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">圣杯布局</div>
+  <div class="container">
+    <div class="middle">
+      <h4>中间区域</h4>
+      <p>
+        中间区域，中间区域，中间区域，中间区域，中间区域，中间区域，中间区域，中间区域，
+        中间区域，中间区域，中间区域，中间区域，中间区域，中间区域，中间区域，中间区域，
+        中间区域，中间区域，中间区域，中间区域，中间区域，中间区域，中间区域，中间区域，
+      </p>
+    </div>
+    <div class="left">
+      <h4>左边</h4>
+      <p>
+       左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，
+         左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，
+          左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，
+         左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，左边，
+      </p>
+    </div>
+    <div class="right">
+      <h4>右边</h4>
+      <p>
+        右边，右边，右边，右边，右边，右边，右边，右边，右边，右边，右边，右边，右边，右边，右边，右边，
+         右边，右边，右边，右边，右边，右边，右边，右边，右边，右边，右边，右边，右边，右边，右边，右边，
+      </p>
+    </div>
+  </div>
+  <div class="footer">底部</div>
+</body>
+
+</html>

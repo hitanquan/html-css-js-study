@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表格布局</title>
+  <style>
+    /* 表格布局 */
+  .parent {
+    display: table;
+    width: 100%;
+  }
+  .parent > div {
+    display: table-cell;
+  }
+  .tableLeft {
+    width: 300px;
+    background-color: pink;
+  }
+  .tableRight {
+    width: 300px;
+    background-color: yellow;
+  }
+  .tableMiddle {
+    background-color: orange;
+  }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <header><h1>table 布局实现圣杯效果</h1></header>
+    <div class="parent">
+      <div class="tableLeft">
+        左
+      </div>
+      <div class="tableMiddle">
+        中
+      </div>
+      <div class="tableRight">
+        右
+      </div>
+    </div>
+    <footer><h6>底部</h6></footer>
+  </div>
+</body>
+</html>

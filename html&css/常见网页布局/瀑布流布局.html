@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .masonry {
+            column-count: 3; /* 将内容分为3列 */
+            column-gap: 10px; /* 列之间的间距 */
+        }
+        .item {
+            display: inline-block;
+            margin: 0 0 10px; /* 设置元素之间的间距 */
+            width: 100%; /* 元素宽度占满列宽 */
+            background-color: #f2f2f2;
+            padding: 10px;
+            box-sizing: border-box;
+            break-inside: avoid; /* 防止项目跨列显示，体现瀑布流特点 */
+        }
+    </style>
+    <title>瀑布流布局示例</title>
+</head>
+<body>
+    <div class="masonry">
+        <div class="item" style="height: 150px">项目1</div>
+        <div class="item" style="height: 200px">项目2</div>
+        <div class="item" style="height: 180px">项目3</div>
+        <div class="item" style="height: 220px">项目4</div>
+        <div class="item" style="height: 250px">项目5</div>
+        <div class="item" style="height: 190px">项目6</div>
+        <div class="item" style="height: 250px">项目7</div>
+        <div class="item" style="height: 300px">项目8</div>
+        <div class="item" style="height: 280px">项目9</div>
+        <div class="item" style="height: 120px">项目10</div>
+        <div class="item" style="height: 150px">项目11</div>
+        <div class="item" style="height: 110px">项目12</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+   body {
+  display: grid;
+  height: 100vh;
+  /** 第一部分（页眉）和第三部分（页脚）的高度都为auto，即本来的内容高度；第二部分（内容区）的高度为1fr，即剩余的所有高度，这可以保证页脚始终在容器的底部。 */
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  background: lightpink;
+  padding: 2rem;
+}
+
+main {
+  background: coral;
+}
+
+footer {
+  background: wheat;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>这是页眉</h1>
+  </header>
+  <main>
+    <h2>这是内容区</h2>
+    <p>这里是网页的主要内容。</p>
+  </main>
+  <footer>
+    <p>这是页脚</p>
+  </footer>
+</body>
+</html>
